@@ -1,2 +1,2 @@
 # rick-and-morty-api
-consumo da API , da sério de animação Rick and Morty 
+consumo da API , da série de animação Rick and Morty 
