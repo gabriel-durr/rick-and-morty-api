@@ -1,10 +1,13 @@
-import { Box, Badge, Image, Icon, Flex } from "@chakra-ui/react";
+import { Box, Badge, Image, Icon, Flex, useColorMode } from "@chakra-ui/react";
 import { StarIcon, WarningTwoIcon } from "@chakra-ui/icons";
 
 export function Card<T>(props: T | any) {
+    const { colorMode } = useColorMode();
+
     return (
         <Box
-            bgColor={"white"}
+            color="black"
+            bgColor={colorMode == "light" ? "cornflowerblue" : "azure"}
             maxW="sm"
             h={"md"}
             borderWidth="px"
@@ -28,19 +31,27 @@ export function Card<T>(props: T | any) {
                 as="h4"
                 lineHeight="tight"
                 noOfLines={1}
-                fontSize="3xl"
+                fontSize="4xl"
+                textAlign={"center"}
             >
                 {props.title}
             </Box>
 
-            <Box p="6">
-                <Box display="flex" alignItems="baseline">
+            <Box p="8">
+                <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent={"flex-start"}
+                >
                     <Badge
                         hidden={props.life == false}
+                        bg={"blackAlpha.900"}
                         borderRadius="8"
                         colorScheme="teal"
-                        color={"greenyellow"}
+                        color={"red"}
+                        textAlign={"center"}
                         padding={1}
+                        pl={2}
                     >
                         {props.life && "is dead"}
                         <Icon
@@ -48,13 +59,14 @@ export function Card<T>(props: T | any) {
                             marginLeft={1}
                             marginBottom={1}
                             as={WarningTwoIcon}
-                            color={props.life && "red.500"}
+                            color={props.life && "darkorange"}
                             fontWeight={"extrabold"}
                         />
                     </Badge>
+                    <span></span>
                     <Box
                         letterSpacing="wide"
-                        fontSize="xs"
+                        fontSize="1rem"
                         textTransform="uppercase"
                         ml="4"
                     >
@@ -62,13 +74,7 @@ export function Card<T>(props: T | any) {
                     </Box>
                 </Box>
 
-                <Box
-                    color={"whiteAlpha.800"}
-                    as="h4"
-                    lineHeight="tight"
-                    noOfLines={1}
-                    fontSize="sm"
-                >
+                <Box as="h4" lineHeight="tight" noOfLines={1} fontSize="sm">
                     Origin: {props.origin}
                 </Box>
 
