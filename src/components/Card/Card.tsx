@@ -6,22 +6,23 @@ export function Card<T>(props: T | any) {
 
     return (
         <Box
-            color="black"
-            bgColor={colorMode == "light" ? "cornflowerblue" : "azure"}
+            color={"black"}
+            bgColor={colorMode == "light" ? "cyan.100" : "azure"}
             maxW="sm"
             h={"md"}
             borderWidth="px"
             borderRadius="lg"
             overflow="hidden"
+            boxShadow="2xl"
+            p="1"
+            rounded="md"
         >
-            <Flex justifyContent={"center"}>
+            <Flex p={2} justifyContent={"center"}>
                 <Image
                     src={props.avatar}
                     alt={props.imageAlt}
                     width="full"
-                    pt="1"
-                    pl="3"
-                    pr="4"
+                    h={"52"}
                     borderRadius={10}
                 />
             </Flex>
@@ -37,7 +38,7 @@ export function Card<T>(props: T | any) {
                 {props.title}
             </Box>
 
-            <Box p="8">
+            <Box p="4">
                 <Box
                     display="flex"
                     alignItems="center"
@@ -63,7 +64,7 @@ export function Card<T>(props: T | any) {
                             fontWeight={"extrabold"}
                         />
                     </Badge>
-                    <span></span>
+
                     <Box
                         letterSpacing="wide"
                         fontSize="1rem"
@@ -74,11 +75,22 @@ export function Card<T>(props: T | any) {
                     </Box>
                 </Box>
 
-                <Box as="h4" lineHeight="tight" noOfLines={1} fontSize="sm">
-                    Origin: {props.origin}
-                </Box>
+                <Flex
+                    mt={5}
+                    justifyContent={"flex-start"}
+                    direction={"column"}
+                    gap={1}
+                >
+                    <Box as="h4" lineHeight="tight" noOfLines={1} fontSize="md">
+                        Origin: {props.origin}
+                    </Box>
 
-                <Box display="flex" mt="2" alignItems="center">
+                    <Box as="h4" lineHeight="tight" noOfLines={1} fontSize="md">
+                        Location: {"Planeta dos Macacos"}
+                    </Box>
+                </Flex>
+
+                <Box display="flex" mt="3" alignItems="center">
                     {Array(5)
                         .fill("")
                         .map((_, i) => (
@@ -86,13 +98,13 @@ export function Card<T>(props: T | any) {
                                 key={i}
                                 color={
                                     i < props.popularityStar
-                                        ? "teal.500"
+                                        ? "gold"
                                         : "gray.300"
                                 }
                             />
                         ))}
                     <Box as="span" ml="2" color="gray.600" fontSize="sm">
-                        {props.episodesCounts} reviews
+                        {props.episodesCounts} episode participation
                     </Box>
                 </Box>
             </Box>
