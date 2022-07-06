@@ -1,5 +1,5 @@
 import { Header } from "./components/Header/Header";
-import { Card } from "./components/Card";
+import { Card } from "./components/Card/Card";
 import { Toggle } from "./components/Toggle/Toggle";
 import { Flex, Box, useColorMode } from "@chakra-ui/react";
 import { CardsAPI } from "./components/CardsAPI/CardsAPI";
@@ -45,21 +45,9 @@ function App() {
                 p="2rem"
             >
                 <Flex wrap="wrap" gap="24" ml="4rem" margin="0 auto 0 4rem">
-                    <Card
-                        avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
-                        imgAlt="Rick doidaoo"
-                        status={true}
-                        title="Rick Modern"
-                        origin="SP"
-                        location="Planeta dos Macacos!"
-                        life={true}
-                        species="Animal"
-                        episodesCounts={3}
-                        popularity={"20"}
-                    />
+                    <CardsAPI />
                 </Flex>
             </Flex>
-            <CardsAPI />
         </Box>
     );
 }

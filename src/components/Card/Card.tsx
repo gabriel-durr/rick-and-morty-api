@@ -21,7 +21,17 @@ import { WarningTwoIcon } from "@chakra-ui/icons";
 import "@fontsource/creepster/400.css";
 import "@fontsource/open-sans/400.css";
 
-export function Card<T>(props: T | any) {
+export function Card<T>({
+    avatar,
+    imageAlt,
+    title,
+    life,
+    species,
+    origin,
+    location,
+    popularity,
+    episodes,
+}: T | any) {
     const { colorMode } = useColorMode();
 
     return (
@@ -39,8 +49,8 @@ export function Card<T>(props: T | any) {
         >
             <Flex p={2} justifyContent="center">
                 <Image
-                    src={props.avatar}
-                    alt={props.imageAlt}
+                    src={avatar}
+                    alt={imageAlt}
                     width="full"
                     h="52"
                     borderRadius={5}
@@ -58,7 +68,7 @@ export function Card<T>(props: T | any) {
                 boxShadow="0px 0px 40px 01px #448C3F"
                 fontFamily="open-sans"
             >
-                {props.title}
+                {title}
             </Box>
 
             <Box p="4">
@@ -68,7 +78,7 @@ export function Card<T>(props: T | any) {
                     justifyContent="flex-start"
                 >
                     <Badge
-                        hidden={props.life == false}
+                        hidden={life == false}
                         bg="blackAlpha.300"
                         borderRadius="8"
                         colorScheme="teal"
@@ -78,14 +88,14 @@ export function Card<T>(props: T | any) {
                         padding={1}
                         pl={2}
                     >
-                        {props.life && "is dead"}
+                        {life && "is dead"}
                         <Icon
                             textAlign="right"
                             fontSize="15"
                             marginLeft={1}
                             marginBottom={1}
                             as={WarningTwoIcon}
-                            color={props.life && "greenyellow"}
+                            color={life && "greenyellow"}
                             fontWeight="extrabold"
                         />
                     </Badge>
@@ -95,10 +105,10 @@ export function Card<T>(props: T | any) {
                         fontSize="1.4rem"
                         fontFamily="creepster"
                         fontWeight="extrabold"
-                        ml={props.life ? "4" : "none"}
+                        ml={life ? "4" : "none"}
                         color={colorMode == "light" ? "#d6ffdd" : "#00c510"}
                     >
-                        {props.species}
+                        {species}
                     </Text>
                 </Box>
 
@@ -117,7 +127,7 @@ export function Card<T>(props: T | any) {
                             noOfLines={1}
                             fontSize="sm"
                         >
-                            {props.origin}
+                            {origin}
                         </Box>
                     </Flex>
 
@@ -129,7 +139,7 @@ export function Card<T>(props: T | any) {
                             noOfLines={1}
                             fontSize="sm"
                         >
-                            {props.location}
+                            {location}
                         </Box>
                     </Flex>
                 </Flex>
@@ -150,17 +160,17 @@ export function Card<T>(props: T | any) {
                                 }
                                 fontSize="smaller"
                             >
-                                33
+                                {episodes}
                             </StatNumber>
                             <StatHelpText fontSize="smaller">
                                 <StatArrow
                                     type={
-                                        props.popularity > 50
+                                        popularity > 50
                                             ? "increase"
                                             : "decrease"
                                     }
                                 />
-                                {23.36}% of participation
+                                {popularity}% of participation
                             </StatHelpText>
                         </Flex>
                     </Stat>
