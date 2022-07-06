@@ -12,6 +12,7 @@ export function Header({ title }: titleType) {
             as="h2"
             size="4xl"
             noOfLines={1}
+            p="3"
         >
             {title}
         </Heading>

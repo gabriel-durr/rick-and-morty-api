@@ -1,7 +1,8 @@
 import { Header } from "./components/Header/Header";
-import { Card } from "./components/Card/Card";
-import { Toggle } from "./components/toggle/Toggle";
+import { Card } from "./components/Card";
+import { Toggle } from "./components/Toggle/Toggle";
 import { Flex, Box, useColorMode } from "@chakra-ui/react";
+import { CardsAPI } from "./components/CardsAPI/CardsAPI";
 
 function App() {
     const { colorMode } = useColorMode();
@@ -11,20 +12,25 @@ function App() {
             bgColor={colorMode == "light" ? "#d1cccc88" : "#1e1e2c21"}
             maxW="ful"
             margin="0 auto"
-            borderRight="1px solid black"
-            borderLeft="1px solid black"
+            borderRight="10px solid black"
+            borderLeft="10px solid black"
         >
             <Flex
                 justifyContent={"space-evenly"}
                 alignItems="center"
+                border="2px solid rgba(255, 255, 255, 0.010)"
                 margin="0 auto"
                 pos="sticky"
                 w="container.xl"
-                pb="1rem"
-                top="0"
+                p="2"
+                top="2"
                 right="0"
                 left="0"
-                bg={colorMode == "light" ? "#ffffff37" : "#1e1e2c2d"}
+                bg={
+                    colorMode == "light"
+                        ? "rgba(30, 30, 44, 0.020)"
+                        : "rgba(255, 255, 255, 0.007)"
+                }
             >
                 <Header title="Rick and Morty API"></Header>
                 <Toggle />
@@ -38,7 +44,7 @@ function App() {
                 minH="1050px"
                 p="2rem"
             >
-                <Flex wrap="wrap" gap="10">
+                <Flex wrap="wrap" gap="24" ml="4rem" margin="0 auto 0 4rem">
                     <Card
                         avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
                         imgAlt="Rick doidaoo"
@@ -47,60 +53,13 @@ function App() {
                         origin="SP"
                         location="Planeta dos Macacos!"
                         life={true}
-                        breed="Animal"
-                        popularityStar={2}
+                        species="Animal"
                         episodesCounts={3}
-                    />
-                    <Card
-                        avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
-                        imgAlt="Rick doidaoo"
-                        status={true}
-                        title="Rick Modern"
-                        origin="SP"
-                        location="Planeta dos Macacos!"
-                        life={true}
-                        breed="Animal"
-                        popularityStar={2}
-                        episodesCounts={3}
-                    />
-                    <Card
-                        avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
-                        imgAlt="Rick doidaoo"
-                        status={true}
-                        title="Rick Modern"
-                        origin="SP"
-                        location="Planeta dos Macacos!"
-                        life={true}
-                        breed="Animal"
-                        popularityStar={2}
-                        episodesCounts={3}
-                    />
-                    <Card
-                        avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
-                        imgAlt="Rick doidaoo"
-                        status={true}
-                        title="Rick Modern"
-                        origin="SP"
-                        location="Planeta dos Macacos!"
-                        life={true}
-                        breed="Animal"
-                        popularityStar={2}
-                        episodesCounts={3}
-                    />
-                    <Card
-                        avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qk9Z7y8c6CEz1x-FBwbMtPYp68znOQjcpPh4aZ5zdVyLBcYIDsLHlWKBFvwEvzQhn-U&usqp=CAU"
-                        imgAlt="Rick doidaoo"
-                        status={true}
-                        title="Rick Modern"
-                        origin="SP"
-                        location="Planeta dos Macacos!"
-                        life={true}
-                        breed="Animal"
-                        popularityStar={2}
-                        episodesCounts={3}
+                        popularity={"20"}
                     />
                 </Flex>
             </Flex>
+            <CardsAPI />
         </Box>
     );
 }

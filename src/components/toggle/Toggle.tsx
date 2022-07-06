@@ -7,7 +7,7 @@ export function Toggle() {
             <>
                 <Switch
                     colorScheme={"cyan"}
-                    size="lg"
+                    size="md"
                     onChange={toggleColorMode}
                 >
                     {colorMode == "light" ? "🌚" : "☀️"}

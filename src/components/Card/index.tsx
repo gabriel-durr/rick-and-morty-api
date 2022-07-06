@@ -98,7 +98,7 @@ export function Card<T>(props: T | any) {
                         ml={props.life ? "4" : "none"}
                         color={colorMode == "light" ? "#d6ffdd" : "#00c510"}
                     >
-                        {props.breed}
+                        {props.species}
                     </Text>
                 </Box>
 
@@ -110,7 +110,7 @@ export function Card<T>(props: T | any) {
                     fontFamily="open-sans"
                 >
                     <Flex gap={2}>
-                        <Text fontWeight="bold">Origin : </Text>
+                        <Text fontWeight="bold">Origin: </Text>
                         <Box
                             as="h4"
                             lineHeight="tight"
@@ -153,8 +153,14 @@ export function Card<T>(props: T | any) {
                                 33
                             </StatNumber>
                             <StatHelpText fontSize="smaller">
-                                <StatArrow type="increase" />
-                                23.36% of participation
+                                <StatArrow
+                                    type={
+                                        props.popularity > 50
+                                            ? "increase"
+                                            : "decrease"
+                                    }
+                                />
+                                {23.36}% of participation
                             </StatHelpText>
                         </Flex>
                     </Stat>
