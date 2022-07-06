@@ -6,7 +6,7 @@ export function Toggle() {
         <header>
             <>
                 <Switch
-                    colorScheme={"red"}
+                    colorScheme={"cyan"}
                     size="lg"
                     onChange={toggleColorMode}
                 >
