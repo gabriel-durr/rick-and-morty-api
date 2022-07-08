@@ -101,6 +101,8 @@ export function Card({
 
 					<Text
 						letterSpacing="wide"
+						textAlign="center"
+						noOfLines={1}
 						fontSize="1.8rem"
 						fontFamily="creepster"
 						fontWeight="extrabold"
