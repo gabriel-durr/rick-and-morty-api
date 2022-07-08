@@ -27,11 +27,11 @@
 
 > <h3> Links : </h3>
 
-ReactJS [link](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs#:~:text=js%3F-,Next.,and%20optimizations%20for%20your%20application. "Clique para ser redirecionado!").
+ReactJS: A JavaScript library for creating interfaces ... [Learn More](https://pt-br.reactjs.org/ "Clique para ser redirecionado!")
 
-ChakraUI [link](https://chakra-ui.com/ "Clique para ser redirecionado!").
+ChakraUI: Chakra UI is a simple, modular and accessible component library that gives you the ... [Learn More](https://chakra-ui.com/ "Clique para ser redirecionado!")
 
-Axios [link](https://axios-http.com/ptbr/ "Clique para ser redirecionado!").
+Axios: Axios is a simple promise-based HTTP client for the browser and node.js. Axios provides a library... [Learn More](https://axios-http.com/ptbr/ "Clique para ser redirecionado!")
 
 <br/><br/>
 
@@ -50,18 +50,19 @@ Axios [link](https://axios-http.com/ptbr/ "Clique para ser redirecionado!").
 </div>
 
 <div id="axios">
-        <img align="left" class="icon" src="https://avatars.githubusercontent.com/u/32372333?s=280&v=4" width="44px"/>
+        <img align="left" class="icon" src="https://avatars.githubusercontent.com/u/32372333?s=280&v=4" width="47px"/>
         <p align="left"><code><b>Axios</b></code></p>
 </div>
 
-  <img align="center" >
+<br>
 
 <div id="chakra">
         <img align="left" class="icon" src="https://itelofilho.gallerycdn.vsassets.io/extensions/itelofilho/chakra-ui-cheatsheet/0.1.2/1602346378840/Microsoft.VisualStudio.Services.Icons.Default" width="32px"/>
         <p align="left"><code><b>Chakra-Ui</b></code></p>
 </div>
 
-<br/>
+
+
 <br/>
 <br/>
 <br/>
