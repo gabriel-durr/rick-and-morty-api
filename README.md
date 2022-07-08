@@ -26,7 +26,7 @@
 <h2 id="challenge"  align="center">⚡ The challenge </h2>
 
 <div align="center">
-        <p> Projeto pessoal de estudo, para exercício de consumo de API. Desenvolvido com ReactJS, Axios para consumo da API e ChakraUI para styles. Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) de cada personagem pela quantidade de episódios que participaram, Icon positivo e negativo com base no mesmo. Dark mode e Light mode, filtro de busca .. </p>
+        <p> Projeto pessoal de estudo, para exercício de consumo de API. Desenvolvido com ReactJS, Axios para consumo da API e ChakraUI para styles. Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) de cada personagem pela quantidade de episódios que participaram, Icon positivo e negativo com base no mesmo. Dark mode e Light mode, tag de morte,  filtro de busca ... </p>
 </div>
 
 <br/><br/>
