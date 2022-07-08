@@ -102,7 +102,10 @@ function App() {
 								size="md"
 								borderRadius={7}
 								focusBorderColor="cyan.400"
-								_placeholder={{opacity: 1, color: "gray.500"}}
+								_placeholder={{
+									opacity: 1,
+									color: "gray.500",
+								}}
 								onChange={e => setSearchChars(e.target.value)}
 							/>
 						</InputGroup>
