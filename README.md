@@ -6,8 +6,8 @@
 </div>
 <br />
 <div align="center">
-        <img align="center" src="https://i.imgur.com/pfPi5TR.png" width="200px" alt="Imagem do projeto"> 
-         <img align="center" src="https://i.imgur.com/iPYmWr1.png" width="200px" alt="Imagem do projeto"> 
+        <img align="center" src="https://i.imgur.com/pfPi5TR.png" width="260px" alt="Imagem do projeto"> 
+         <img align="center" src="https://i.imgur.com/iPYmWr1.png" width="260px" alt="Imagem do projeto"> 
                
 </div>
 
