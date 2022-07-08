@@ -1,7 +1,7 @@
 <h1 align="center" class="line-1 anim-typewriter"> Rick and Morty API</h1>
 
 <div align="center">
-        <img align="center" src="https://media0.giphy.com/media/3NNpk1wESqMUp3sYuR/giphy.gif?cid=790b7611008ac1250e0934e9ffec916a431c7aa6c8dd96a3&rid=giphy.gif&ct=g" alt="Imagem do projeto" width="500px"> 
+        <img align="center" src="https://media0.giphy.com/media/3NNpk1wESqMUp3sYuR/giphy.gif?cid=790b7611008ac1250e0934e9ffec916a431c7aa6c8dd96a3&rid=giphy.gif&ct=g" alt="Imagem do projeto"> 
         
 </div>
 
