@@ -4,6 +4,12 @@
         <img align="center" src="https://media0.giphy.com/media/3NNpk1wESqMUp3sYuR/giphy.gif?cid=790b7611008ac1250e0934e9ffec916a431c7aa6c8dd96a3&rid=giphy.gif&ct=g" alt="Imagem do projeto"> 
         
 </div>
+<br />
+<div align="center">
+        <img align="center" src="https://i.imgur.com/pfPi5TR.png" width="200px" alt="Imagem do projeto"> 
+         <img align="center" src="https://i.imgur.com/iPYmWr1.png" width="200px" alt="Imagem do projeto"> 
+               
+</div>
 
 <br/>
 
@@ -20,7 +26,7 @@
 <h2 id="challenge"  align="center">⚡ The challenge </h2>
 
 <div align="center">
-        <p> Projeto pessoal de estudo, para exercício de consumo de API. Desenvolvido com ReactJS, Axios para consumo da API e ChakraUI para styles. Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) de cada personagem pela quantidade de episódios que participaram, Icon positivo e negativo com base no mesmo. Dark mode e Light mode  </p>
+        <p> Projeto pessoal de estudo, para exercício de consumo de API. Desenvolvido com ReactJS, Axios para consumo da API e ChakraUI para styles. Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) de cada personagem pela quantidade de episódios que participaram, Icon positivo e negativo com base no mesmo. Dark mode e Light mode, filtro de busca .. </p>
 </div>
 
 <br/><br/>
