@@ -13,14 +13,14 @@ export function Header({title}: titleType) {
 					colorScheme="teal"
 					size="sm"
 					variant="outline">
-					Prev Page
+					Prev
 				</Button>
 				<Button
 					rightIcon={<ArrowRightIcon />}
 					colorScheme="cyan"
 					size="sm"
 					variant="solid">
-					Next Page
+					Next
 				</Button>
 			</Stack>
 

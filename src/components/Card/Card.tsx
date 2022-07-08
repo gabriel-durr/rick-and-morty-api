@@ -39,28 +39,31 @@ export function Card({
 			color={colorMode == "light" ? "white" : "black"}
 			bgColor={colorMode == "light" ? "gray.800" : "azure"}
 			width="20rem"
-			h="31rem"
+			h="auto"
 			borderWidth="medium"
 			borderRadius="full"
 			overflow="hidden"
 			boxShadow="lg"
+			border="1px solid #02ffff"
 			p="1"
 			rounded="md">
-			<Flex p={2} justifyContent="center">
+			<Flex p={1} justifyContent="center">
 				<Image
 					src={avatar}
 					alt={imageAlt}
-					width="full"
-					h="52"
-					borderRadius={5}
+					width="17rem"
+					h="15rem"
+					borderRadius={12}
 				/>
 			</Flex>
 			<Box
+				margin="0 auto"
 				mt="1"
 				fontWeight="extrabold"
+				maxWidth="18rem"
 				as="h4"
 				lineHeight="tight"
-				noOfLines={2}
+				noOfLines={1}
 				fontSize="3xl"
 				color={colorMode == "light" ? " #ffffffb9" : "#000000d3"}
 				textAlign="center"
@@ -101,7 +104,7 @@ export function Card({
 						fontSize="1.8rem"
 						fontFamily="creepster"
 						fontWeight="extrabold"
-						ml={life ? "4" : "none"}
+						ml={life ? "4" : "20"}
 						color={colorMode == "light" ? "#d6ffdd" : "#00c510"}>
 						{species}
 					</Text>
