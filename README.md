@@ -31,7 +31,7 @@
 </div>
 
 <div align="center">
- <p>Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) de cada personagem pela quantidade de episódios                    que participaram, Icon positivo e negativo com base no mesmo. Dark mode e Light mode, tag de morte,  filtro de busca ... </p>
+ <p>Cada card possui  infos da API, e acrescentei lógica para porcentagem de participação (popularidade) com Icon positivo / negativo  de cada personagem com base nos episódios atuados. Dark mode e Light mode, tag de morte,  filtro de busca ... </p>
 </div>
 
 <br/><br/>
