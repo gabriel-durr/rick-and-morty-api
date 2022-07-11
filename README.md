@@ -31,7 +31,7 @@
 </div>
 
 <div align="center">
- <p>Each card has API info, and I added logic for percentage participation (popularity) with positive/negative Icon of each character based on episodes played. Dark mode and Light mode, death tag, search filter...</p>
+ <p>Each card has API info, and I added logic for percentage participation (popularity) with positive/negative Icon of each character based on episodes played. Dark and Light mode, death tag, search filter...</p>
 </div>
 
 <br/><br/>
