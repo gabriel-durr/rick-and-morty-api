@@ -134,7 +134,7 @@ Axios: Axios is a simple promise-based HTTP client for the browser and node.js. 
         
 <h3 id="license" ></h3>
 
-> This project is licensed under the  &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](MIT License)
+> This project is licensed under the  &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
 
