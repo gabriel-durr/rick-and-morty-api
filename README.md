@@ -94,13 +94,13 @@ Axios: Axios is a simple promise-based HTTP client for the browser and node.js. 
 2. <b>Install dependencies</b>
 
 ```bash
-  $ yarn add or npm install
+  $ npm i
 ```
 
 3. <b>Start the application</b>
 
 ```bash
-  $ yarn run dev or npm run dev
+  $ npm run dev
 ```
 
 <div/>
