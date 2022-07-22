@@ -85,19 +85,19 @@ Axios: Axios is a simple promise-based HTTP client for the browser and node.js. 
 
 <div>
 
-1. <b>Clone the project</b>
+1. &nbsp; <b>Clone the project</b>
 
 ```bash
   $ git clone https://github.com/gabriel-durr/rick-and-morty-api.git && cd api-rick-and-morty
 ```
 
-2. <b>Install dependencies</b>
+2. &nbsp; <b>Install dependencies</b>
 
 ```bash
   $ npm i
 ```
 
-3. <b>Start the application</b>
+3. &nbsp; <b>Start the application</b>
 
 ```bash
   $ npm run dev
