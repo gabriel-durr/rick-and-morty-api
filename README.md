@@ -61,6 +61,11 @@ Axios: Axios is a simple promise-based HTTP client for the browser and node.js. 
         <p align="left"><code><b>TypeScript</b></code></p>
 </div>
 
+<div id="chakra">
+        <img align="left" class="icon" src="https://itelofilho.gallerycdn.vsassets.io/extensions/itelofilho/chakra-ui-cheatsheet/0.1.2/1602346378840/Microsoft.VisualStudio.Services.Icons.Default" width="32px"/>
+        <p align="left"><code><b>Chakra-Ui</b></code></p>
+</div>
+
 <div id="axios">
         <img align="left" class="icon" src="https://avatars.githubusercontent.com/u/32372333?s=280&v=4" width="47px"/>
         <p align="left"><code><b>Axios</b></code></p>
@@ -68,10 +73,7 @@ Axios: Axios is a simple promise-based HTTP client for the browser and node.js. 
 
 <br>
 
-<div id="chakra">
-        <img align="left" class="icon" src="https://itelofilho.gallerycdn.vsassets.io/extensions/itelofilho/chakra-ui-cheatsheet/0.1.2/1602346378840/Microsoft.VisualStudio.Services.Icons.Default" width="32px"/>
-        <p align="left"><code><b>Chakra-Ui</b></code></p>
-</div>
+
 
 
 
